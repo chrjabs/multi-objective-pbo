@@ -1,0 +1,29 @@
+[package]
+name = "maxpre"
+version = "0.2.4"
+edition = "2021"
+authors = ["Christoph Jabs <christoph.jabs@helsinki.fi>"]
+license = "MIT"
+description = "Rust bindings for the (MO-)MaxSAT preprocessor MaxPre"
+keywords = ["binding", "preprocessor", "maxsat"]
+repository = "https://github.com/chrjabs/maxpre-rs"
+homepage = "https://bitbucket.com/coreo-group/maxpre2"
+readme = "README.md"
+
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustsat = { version = "0.6.0", path = "../rustsat", default-features = false }
+cpu-time = "1.0.0"
+
+[build-dependencies]
+cc = { version = "1", features = ["parallel"] }
+git2 = "0"
+glob = "0"
+
+[features]
+default = ["optimization"]
+optimization = ["rustsat/optimization"]
+multiopt = ["optimization", "rustsat/multiopt"]
