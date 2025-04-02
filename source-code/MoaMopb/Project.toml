@@ -1,6 +1,6 @@
 name = "MoaMopb"
 uuid = "382ef242-0153-48c4-bec1-b37ba39d33da"
-authors = ["Christoph Jabs <christoph.jabs@helsinki.fi>"]
+authors = ["xxx"]
 version = "0.1.0"
 
 [deps]
@@ -9,5 +9,9 @@ Gurobi = "2e9cd046-0924-5485-92f1-d5272153d98b"
 HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
 MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
 MultiObjectiveAlgorithms = "0327d340-17cd-11ea-3e99-2fd5d98cecda"
+PackageCompiler = "9b87118b-4619-50d2-8e1e-99f35a4d4d9d"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 SCIP = "82193955-e24f-5292-bf16-6f2c5261a85f"
+
+[compat]
+PackageCompiler = "2.2.0"

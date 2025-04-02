@@ -36,10 +36,7 @@ clean_deps:
 		 do \
 			 make -C $$dep clean;  done
 	
-submodules:
-	git submodule update --init --recursive
-	
-build_maxpre: submodules
+build_maxpre:
 	$(MAKE) -C maxpre lib
 	
 clean_maxpre:

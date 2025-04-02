@@ -32,7 +32,7 @@ thiserror = "1.0.63"
 
 [package]
 name = "scuttle"
-authors = ["Christoph Jabs <christoph.jabs@helsinki.fi>"]
+authors = ["xxx"]
 version = "0.4.0"
 edition = "2021"
 license = "MIT"
