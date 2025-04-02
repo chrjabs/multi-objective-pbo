@@ -1,0 +1,55 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+# Others
+tmp/
+*#
+*~
+/open-wbo
+/depend.mk
+*.or
+*.jar
+*.od
+/open-wbo_debug
+/depsList/
+/examples/
+/.cache/
+./ccls-cache/
+/.dir-locals.el
+basket/*
+/.gdb_history
+/TAGS
+*egg-info
+/gdb-python/build/
+*.gdb_history
