@@ -1,0 +1,16 @@
+# editor
+.idea/*
+.vscode/*
+.cache/
+.lapce/
+
+out/
+compile_commands.json
+**.out
+
+# soplex
+/soplex*
+
+build*/
+
+proof.pbp
