@@ -1,0 +1,2 @@
+using MoaMopb
+MoaMopb.main()
