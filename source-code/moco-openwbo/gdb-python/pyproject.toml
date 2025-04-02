@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdb-openwbo"
+description = "helper functions to be used when debugging openwbo"
+version = "0.1.0"
+authors = [
+	{ name = "Joao Cortes", email = "joaooneillcortes@outlook.pt" }
+]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pre-commit",
+    "bump2version"
+]
+
