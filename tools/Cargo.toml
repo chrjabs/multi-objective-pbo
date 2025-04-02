@@ -1,0 +1,67 @@
+[package]
+name = "rustsat-tools"
+version = "0.4.3"
+edition.workspace = true
+authors = ["Christoph Jabs <christoph.jabs@helsinki.fi>"]
+license.workspace = true
+description = "Tools and examples built on the RustSAT library"
+keywords = ["rustsat", "sat", "satisfiability"]
+repository = "https://github.com/chrjabs/rustsat"
+readme = "README.md"
+include = ["LICENSE", "CHANGELOG.md", "README.md", "/src/"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow.workspace = true
+atty.workspace = true
+clap.workspace = true
+concolor-clap.workspace = true
+itertools.workspace = true
+nom.workspace = true
+termcolor.workspace = true
+rand.workspace = true
+rand_chacha.workspace = true
+rustsat = { workspace = true, features = [
+  "compression",
+  "multiopt",
+  "rand",
+  "internals",
+] }
+rustsat-cadical = { workspace = true, optional = true }
+rustsat-minisat = { workspace = true, optional = true }
+
+[features]
+default = ["minisat"]
+minisat = ["dep:rustsat-minisat"]
+cadical = ["dep:rustsat-cadical"]
+
+[[bin]]
+name = "enumerator"
+
+[[bin]]
+name = "cnf2opb"
+
+[[bin]]
+name = "opb2cnf"
+
+[[bin]]
+name = "wcnf2opb"
+
+[[bin]]
+name = "opb2wcnf"
+
+[[bin]]
+name = "mcnf2opb"
+
+[[bin]]
+name = "opb2mcnf"
+
+[[bin]]
+name = "shuffledimacs"
+
+[[bin]]
+name = "gbmosplit"
+
+[[bin]]
+name = "encodings"
