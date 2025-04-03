@@ -56,8 +56,11 @@ The following prerequisites must be installed:
     instructions on how to install `rustup` and then run `rustup install nightly`)
 - A Java JDK (the `moco-openwbo` LB solver calls `sat4j`)
 - Julia
-- CPLEX must be installed and the `$CPLEX_STUDIO_BINARIES` environment variable
-    must point to the corresponding `cplex/bin/x86-64_linux` directory
+- CPLEX (for the scalarized solver) must be installed and the
+  `$CPLEX_STUDIO_BINARIES` environment variable must point to the corresponding
+  `cplex/bin/x86-64_linux` directory
+- CPLEX 12.10 (for the branch-and-bound solver) must be installed and the
+  `$CPLEX_1210` environment variable must point to its base directory
 
 All compiled binaries will be placed in `bin/` with one notable exception:
 The `mocoopenwbo_lb` solver needs to be run from its source directory, as it

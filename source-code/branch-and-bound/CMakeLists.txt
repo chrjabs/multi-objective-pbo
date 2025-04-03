@@ -4,7 +4,7 @@ project(Forget21)
 INCLUDE(CheckCXXSourceCompiles)
 
 set(CPLEX_STUDIO
-  "$ENV{HOME}/progs/ibm/ILOG/CPLEX_Studio1210"
+  "$ENV{CPLEX_1210}"
   CACHE STRING "The path to the top level CPLEX studio install directory"
 )
 
