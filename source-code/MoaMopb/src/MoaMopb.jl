@@ -75,7 +75,7 @@ function run(
         MOI.set(model, MOI.AbsoluteGapTolerance(), 1e-6)
         MOI.set(model, MOI.RelativeGapTolerance(), 0.0)
         if opt == CPLEX.Optimizer
-            MOI.set(model, MOI.RawOptimizerAttribute("CPXPARAM_MIP_Tolerances_Integrality"), 1e-9)
+            MOI.set(model, MOI.RawOptimizerAttribute("CPXPARAM_MIP_Tolerances_Integrality"), 0)
         elseif opt == HiGHS.Optimizer
             MOI.set(model, MOI.RawOptimizerAttribute("mip_feasibility_tolerance"), 1e-8)
         end

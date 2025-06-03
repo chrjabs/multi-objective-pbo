@@ -1,6 +1,6 @@
 name = "MoaMopb"
 uuid = "382ef242-0153-48c4-bec1-b37ba39d33da"
-authors = ["xxx"]
+authors = ["Christoph Jabs <christoph.jabs@helsinki.fi>"]
 version = "0.1.0"
 
 [deps]
@@ -14,4 +14,4 @@ Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 SCIP = "82193955-e24f-5292-bf16-6f2c5261a85f"
 
 [compat]
-PackageCompiler = "2.2.0"
+PackageCompiler = "2.2.1"

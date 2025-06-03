@@ -1,4 +1,4 @@
-# Supplement for CP'25 Submission 95
+# Supplement for JELIA'25 Submission 109
 
 **A Cross-Community Evaluation of Pseudo-Boolean Solving under Multiple Objectives**
 
@@ -39,7 +39,7 @@ All remaining columns are of form `<solver>_<feature>`:
         `roundingsat_bos_oll_nocb`: The previous three with proof logging
     - `mocoopenwbo_lb`: Lower-bounding algorithm from Cortes et al.
     - `forget21`: Branch & Bound algorithm from Forget et al.
-    - `moa_dr_cplex_tuned`: Scalarized algorithm from Dominguez-Rios et al.
+    - `moa_dr_cplex_tuned_0`: Scalarized algorithm from Dominguez-Rios et al.
 - `<feature>`
     - `result`: The result of the run, either `solved`, `timeout`, or `memout`
     - `CPUTIME`: The CPU time of the solver run
