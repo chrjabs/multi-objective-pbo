@@ -1,7 +1,5 @@
 # Supplement for JELIA'25 Paper "Engineering and Evaluating Multi-objective Pseudo-boolean Optimizers"
 
-**A Cross-Community Evaluation of Pseudo-Boolean Solving under Multiple Objectives**
-
 ```
 .
 ├── benchmarks
