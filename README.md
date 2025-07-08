@@ -1,4 +1,4 @@
-# Supplement for JELIA'25 Submission 109
+# Supplement for JELIA'25 Paper "Engineering and Evaluating Multi-objective Pseudo-boolean Optimizers"
 
 **A Cross-Community Evaluation of Pseudo-Boolean Solving under Multiple Objectives**
 
@@ -18,6 +18,14 @@
 │   └── scuttle             the Scuttle MaxSAT-based solver
 └── README.md               this README
 ```
+
+**Note about Scuttle**: this repository contains the exact version of the code
+used in our paper, which can also be found in the [Scuttle
+repository](https://bitbucket.org/coreo-group/scuttle) at the
+[`jelia25`](https://bitbucket.org/coreo-group/scuttle/src/jelia25/) tag.
+If you want to use Scuttle in your own experiments, please use the version from
+the [main branch](https://bitbucket.org/coreo-group/scuttle/src/main/), which
+includes all features described in this paper.
 
 All instructions in this README were tested on a Linux system, steps on
 different operating systems might differ or solvers might not compile.
